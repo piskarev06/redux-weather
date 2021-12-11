@@ -15,7 +15,7 @@ export const getWeather = (city: string): ThunkAction<void, RootState, null, Wea
   return async (dispatch) => {
     try {
       const res = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?id=${city}&appid=${api_key}`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`,
       )
 
       if (!res.ok) {
@@ -28,7 +28,7 @@ export const getWeather = (city: string): ThunkAction<void, RootState, null, Wea
         type: GET_WEATHER,
         payload: resData,
       })
-    } catch (err) {
+    } catch (err: any) {
       dispatch({
         type: SET_ERROR,
         payload: err.message,
