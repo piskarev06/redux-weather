@@ -36,17 +36,12 @@ export const Search: FC<SerachProps> = ({ title }) => {
           <form className="py-5" onSubmit={(e) => submitHandler(e)}>
             <input
               placeholder="Enter city name"
-              style={{ maxWidth: 300 }}
-              className="input has-text-centered mb-2"
+              className="input search-input has-text-centered mb-2"
               type="text"
               value={city}
               onChange={(e) => changeHandler(e)}
             />
-            <button
-              className="button is-primary is-fullwidth"
-              style={{ maxWidth: 300, margin: '0 auto' }}>
-              Search
-            </button>
+            <button className="button search-btn is-primary is-fullwidth">Search</button>
           </form>
         </div>
       </div>

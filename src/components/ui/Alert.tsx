@@ -13,7 +13,7 @@ export const Alert: FC<AlertProps> = ({ message, onClose }) => {
         <header className="modal-card-head has-background-danger">
           <p className="modal-card-title has-text-white">{message}</p>
         </header>
-        <footer className="modal-card-foot" style={{ justifyContent: 'center' }}>
+        <footer className="modal-card-foot modal-foot">
           <button className="button" onClick={onClose}>
             Close
           </button>

@@ -13,3 +13,24 @@ code {
 .level .level-item {
   margin-bottom: 50px !important;
 }
+
+input.search-input {
+  max-width: 300px;
+}
+
+button.search-btn {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+footer.modal-foot {
+  justify-content: center;
+}
+
+.weather-title {
+  margin-bottom: 50px !important;
+}
+
+div.description {
+  align-items: flex-start;
+}
